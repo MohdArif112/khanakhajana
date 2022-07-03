@@ -1,0 +1,298 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+   background-color: rgb(237, 247, 237);
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    height: 25px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+/*Navigation Bar: list Styling */
+
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   color: white;
+}
+#navbar ul li a:hover{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+ }
+
+ /* Home Section */
+
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 612px;
+    justify-content: center;
+    align-items: center;
+ }
+ #home::before{
+    content: "";
+    background: url(./bg22.jpeg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+ }
+
+ #home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+ }
+ #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+ }
+
+
+ .center{
+    text-align: center;
+ }
+
+ /* Services Section */
+
+ #services{
+    display: flex;
+    margin: 5px;
+    
+ }
+
+ #services .box{
+    border: 2px solid green;
+    margin: 22px;
+    border-radius: 20px;
+    padding: 25px 25px 25px 25px;
+ }
+ #services .box img{
+    height: 180px;
+    padding: 12px;
+    margin: auto;
+    display: block; 
+    border-radius: 30px;
+ }
+
+ #services .box p{
+    font-family: 'Raleway', sans-serif;
+ }
+
+
+ /* Customer-Section */
+
+
+ /* Testimonail Section */
+
+ .testimonial__wrapper{
+   max-width: 400px;
+   margin: 0 auto;
+ }
+ .testimonial__title{
+   font-size: 1.8rem;
+   margin-bottom: 3rem;
+   text-align: center;
+   text-transform: capitalize;
+ }
+
+.testimonial__items__wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   margin-left: 15px;
+   margin-right: 15px;
+}
+.testimonial__items{
+   padding: 1rem;
+   display: flex;
+   gap: 1rem;
+   background: rgb(171, 241, 171);
+   border-radius: 12px;
+}
+.testimonial__item__info{
+   flex: 4;
+}
+.testimonial__img{
+   flex: 2;
+   border-radius: 12px;
+   overflow: hidden;
+  
+}
+.testimonial__img img{
+   object-fit: cover;
+   width: 200px;
+}
+.testimonial__item__name{
+   font-size: 1.4rem;
+   font-family: poppins;
+   margin-bottom: 1rem;
+}
+.testimonial__item__stars{
+   max-height: 50px;
+   width: max-content;
+   margin-bottom: 1.5rem;
+}
+.testimonial__item__text{
+   font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px){
+   .testimonial__wrapper{
+      max-width: 900px;
+
+   }
+   .testimonial__title{
+      font-size: 3.6rem;
+      margin-bottom: 5rem;
+   }
+   
+}
+
+/* footer style */
+footer{
+   padding-top: 5rem;
+   padding-bottom: 2rem;
+   background-color: rgb(230, 225, 225);
+   margin: 20px 10px 20px 10px;
+   border-radius: 12px;
+
+}
+.footer__wrapper{
+   display: flex;
+   flex-direction: row;
+   gap: 8rem;
+}
+.footer__logo{
+   width: 300px;
+   margin-bottom: 2rem;
+}
+.footer__desc{
+   font-size: 1.4rem;
+   margin-bottom: 2rem;
+}
+
+.footer__socials__title{
+   font-size: 1.8rem;
+   margin-bottom: 1rem;
+}
+
+.footer__socials li{
+   display: inline-block;
+   margin-right: 0.5rem;
+}
+
+.footer__socials a{
+   
+   padding: .8rem .5rem;
+   background-color: white;
+   border: 1px solid rgb(82, 126, 82);
+   border-radius: 8px;
+}
+.footer__text__title{
+   font-size: 1.8rem;
+   margin-bottom: 1rem;
+   font-weight: 600;
+}
+
+.footer__socials svg{
+   width: 20px;
+   color: black;
+}
+
+.footer__text a{
+   font-size: 1.4rem;
+   margin-bottom: .5rem;
+   color: rgb(85, 81, 81);
+   font-family: Raleway;
+   text-decoration: none;
+}
+  /* utilty Class */
+
+  .h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Poppin', sans-serif;
+ }
+
+ .h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'poppin', sans-serif;
+ }
+
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(111, 40, 40);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+   
+ }
+ 
